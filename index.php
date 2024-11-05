@@ -1,20 +1,18 @@
 <?php
-include("dbconn.inc.php");
-include("shared.php");
+include("db/dbconn.inc.php");
+include("components/nav.php");
+include("components/footer.php");
 
 $conn = dbConnect();
-
 ?>
-<?php
-print $HTMLHeader;
-print $nav;
-?>
-<main>
-
-</main>
-<?php
-print $footer;
-?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CTEC4321 Code Example</title>
+	<link rel='stylesheet' href='styles/styles.css' type='text/css'>
+</head>
+<body>
+    <?php GetNavbar("index.php"); ?>
+    <?php GetFooter(); ?>
 </body>
-
 </html>
